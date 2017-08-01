@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>	
+<head>
+<title>Registration Form</title>
+<head>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"
+		  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+		  crossorigin="anonymous"></script>	
+	<link rel="stylesheet" type="text/css" href="/registration/index.css">
+	<script src="/registration/index.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	
+</head>
+
+<body>
+	<form class="registrationBorder" name="form" onsubmit="return validateForm()">
+
+		<div class="headBlock">
+			SIGN UP
+		</div><br />
+
+		<div class="userBlock">
+			Your username 
+			<input type="text" id="userName" name="txtUserName" size="19"placeholder="musuperusername690">
+			<span class="error_form" id="username_error_message"></span>
+		</div><br />
+
+		<div class="emailBlock">
+			Your email
+			<input  type="email" id="userEmail" size="25"name="txtEmail" placeholder="musupermail@gmail.com">
+			<span class="error_form" id="email_error_message"></span>
+		</div><br />
+
+		<div class="passwordBlock">
+			Your password
+			<input  type="password" id="userPassword" name="txtPassword" maxlength="12" size="25"placeholder="eg:X8dfl90EO">
+			<span class="error_form" id="password_error_message"></span>
+		</div><br />
+
+		<div class="confirmPassBlock">
+			Please confirm your password
+			<input  type="password"  maxlength="12"id="userConfirmPass" name="txtConfirmpass"placeholder="eg:X8dfl90EO">
+			<span class="error_form" id="confirmPass_error_message"></span>
+		</div><br />
+
+		<div class="singUpBlock">
+			<input id="btnregistrationBorder" type="onsubmit" value="Sign Up">
+		</div><br />
+
+		<div class="logInBlock">
+			Already a member ?<button class="btnLogIn">Go and Login</button>
+		</div><br />
+	</form>
+
+</body>
+
+</html>
